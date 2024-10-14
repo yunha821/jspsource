@@ -8,5 +8,4 @@
 	session.invalidate();
 	// 페이지 이동
 	response.sendRedirect("main.jsp");
-
 %>
