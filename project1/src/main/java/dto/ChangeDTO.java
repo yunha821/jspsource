@@ -7,14 +7,9 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Getter @Setter @ToString
-@NoArgsConstructor
-@AllArgsConstructor
-
+@NoArgsConstructor @AllArgsConstructor
 public class ChangeDTO {
-	
 	private String userid;
 	private String curentPassword;
-	private String changePassword;
-	
-
+	private String changePassword;	
 }

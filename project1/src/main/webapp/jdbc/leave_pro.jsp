@@ -6,8 +6,10 @@
 	String userid = request.getParameter("userid");
 	String password = request.getParameter("password");
 
+	
+	
 	// MemberDAO delete 호출
-	MemberDAO dao = new MemberDAO();
+	MemberDAO dao = new MemberDAO();	
 	int deleteRow = dao.delete(userid, password);
 	
 	// 결과에 따라 이동

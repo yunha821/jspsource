@@ -5,7 +5,7 @@
 <form action="leave_pro.jsp"  method="post">
   <div class="mb-3">
     <label for="userid" class="form-label">아이디</label>
-    <input type="text" class="form-control" id="userid" aria-describedby="userid" name="userid" value="<%=loginDto.getUserid()%>">
+    <input type="text" class="form-control" id="userid" aria-describedby="userid" name="userid"  value="<%=loginDto.getUserid()%>">
   </div>
   <div class="mb-3">
     <label for="password" class="form-label">비밀번호</label>
