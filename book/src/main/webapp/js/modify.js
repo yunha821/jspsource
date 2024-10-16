@@ -1,11 +1,11 @@
 
 // 목록 클릭 시 리스트로 이동(location)
-document.querySelector(".btn-primary").addEventListener("click", ()=>{
+	document.querySelector(".btn-primary").addEventListener("click", ()=>{
 	location.href = "list_pro.jsp";
 	
 });
 
-document.querySelector(".btn-danger").addEventListener("click", ()=>{
+	document.querySelector(".btn-danger").addEventListener("click", ()=>{
 	location.href = "delete_pro.jsp?code="+code
 });
 

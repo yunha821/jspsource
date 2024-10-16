@@ -201,6 +201,7 @@ public class MemberDAO {
 		try {
 			con = getConnection();
 			String sql = "DELETE FROM USERTBL WHERE userid =? AND password=?";
+			pstmt =con.prepareStatement(sql);
 			pstmt.setString(1, userid);
 			pstmt.setString(2, password);
 			deleteRow = pstmt.executeUpdate();
