@@ -9,7 +9,7 @@
 <body>
 <ul>
 	<li><a href="/member/register.jsp">회원가입</a></li>
-	<li><a href="/member/login.jsp"">로그인</a></li>
+	<li><a href="/member/login.jsp">로그인</a></li>
 	<li><a href="/book/create.jsp">도서등록</a></li>
 	<li><a href="/book/read.jsp">도서조회</a></li>
 	<li><a href="/book/modify.jsp">도서수정</a></li>

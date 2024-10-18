@@ -11,9 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import action.Action;
 import action.ActionForward;
-import action.CreateAction;
-import action.LoginAction;
-import action.RegisterAction;
+import action.BookListAction;
+import action.BookReadAction;
 
 /**
  * Servlet implementation class BasicServlet
@@ -31,28 +30,25 @@ public class BasicServlet extends HttpServlet {
 		// 한글처리
 		request.setCharacterEncoding("utf-8");
 
-		// 톰캣서버의 path 수정하지 않았다면
-		// RequestURI => /프로젝트명/경로명 => /model2/login.do
-		// ContextPath => /프로젝트명 => /model2
-		// "/model2/login.do".substring(7) 경로명만 추출 => /login.do
-
 		String requestUri = request.getRequestURI(); // /login.do
 		String contextPath = request.getContextPath();
 		String cmd = requestUri.substring(contextPath.length()); // /login.do
 
-		// syso
-//		System.out.println("requestUri "+requestUri);
-//		System.out.println("contextPath "+contextPath);	
-		System.out.println("cmd " + cmd);
-
+		//  http://localhost:8090/list.do
+		
 		Action action = null;
-
-		if (cmd.equals("/login.do")) {			
-			action = new LoginAction("index.jsp");
-		} else if (cmd.equals("/register.do")) {			
-			action = new RegisterAction("/member/login.jsp");
-		} else if (cmd.equals("/create.do")) {			
-			action = new CreateAction("index.jsp");
+		if (cmd.equals("/list.do")) {
+			action = new BookListAction("/book/list.jsp");
+		}else if (cmd.equals("/read.do")) {
+			action = new BookReadAction("/book/read.jsp");
+		}  
+		
+		else if (cmd.equals("/login.do")) {
+			// action = new LoginAction("index.jsp");
+		} else if (cmd.equals("/register.do")) {
+			// action = new RegisterAction("/member/login.jsp");
+		} else if (cmd.equals("/create.do")) {
+			// action = new CreateAction("index.jsp");
 		}
 
 		ActionForward af = null;

@@ -10,12 +10,12 @@
 <h1>Register</h1>
 <form action="/register.do" method="post">
 	<div>
-		<lable for="userid">userid</lable>
-		<input type="text" name="userid" id="userid" />	
+		<label for="userid">userid</label>
+		<input type="text" name="userid" id="userid" />
 	</div>
 	<div>
 		<button>회원가입</button>
 	</div>
-	</form>
+</form>
 </body>
 </html>

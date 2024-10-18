@@ -10,12 +10,12 @@
 <h1>Login</h1>
 <form action="/login.do" method="post">
 	<div>
-		<lable for="userid">userid</lable>
-		<input type="text" name="userid" id="userid" />	
+		<label for="userid">userid</label>
+		<input type="text" name="userid" id="userid" />
 	</div>
 	<div>
 		<button>로그인</button>
 	</div>
-	</form>
+</form>
 </body>
 </html>
