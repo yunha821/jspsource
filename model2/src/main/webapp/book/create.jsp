@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 <h1>도서등록</h1>
 <form action="/create.do" method="post">
 	<div>
@@ -17,5 +18,8 @@
 		<button>도서등록</button>
 	</div>
 </form>
+=======
+
+>>>>>>> refs/remotes/origin/main
 </body>
 </html>
