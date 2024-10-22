@@ -33,7 +33,7 @@ public class BookUpdateAction implements Action {
 		boolean updateFlag = service.update(updateDto);
 		
 		if(updateFlag) {
-			// 리턴 상세조회 /read.do?code=1003
+			// 리턴 상세조회 /re;ad.do?code=1003
 			path += "?code=" +updateDto.getCode()+"&keyword="+URLEncoder.encode(keyword, "utf-8");;
 		}else {
 			// 0 리턴 수정페이지
